@@ -3,7 +3,7 @@ import nox
 nox.options.reuse_existing_virtualenvs = True
 
 build_command = ["-b", "html", "docs/source", "docs/build/html"]
-language = 'en'
+
 @nox.session(python="3.9")
 def docs(session):
     session.install("-r", "docs/doc-requirements.txt")
