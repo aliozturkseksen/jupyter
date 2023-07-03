@@ -221,3 +221,5 @@ locale_dirs = ['locale/']
 
 def setup(app):
     app.add_css_file("custom.css")
+    'preamble': '\\renewcommand{\\glsentryfmt}[1]{\\textbf{#1}}'
+}```
